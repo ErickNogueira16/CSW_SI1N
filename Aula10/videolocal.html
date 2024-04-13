@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(185, 177, 177);
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            max-width: 1080px;
+        }
+
+        video {
+            display: flex;
+            margin: 10px auto;
+        }
+
+        .foto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .link {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="foto">
+            <img src="MinhaFoto.jpeg" alt="Uma foto minha" width="200px" height="600px">
+        </div>
+        <div class="videos">
+            <video width="720" controls>
+                <source src="[Making of Animation] Commission [CLIP STUDIO PAINT].mp4" type="video/mp4">
+            </video>
+            <video width="720" controls>
+                <source src="[Making of Animation] Original Character _Lighten up!_ [CLIP STUDIO PAINT].mp4" type="video/mp4">
+            </video>
+            <video width="720" controls>
+                <source src="Brilhante - Curta Metragem de Animação (2021).mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+    <div class="link">
+        <a href="index.html">Voltar a página</a>
+    </div>
+</body>
+</html>
