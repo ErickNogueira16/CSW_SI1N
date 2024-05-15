@@ -5,46 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
     <style>
-        span {
-            color: red;
+        body{
+            background-color: black;
         }
 
-        .a {
-            background-color: lightblue;
+        .container{
+            background-color: aqua;
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+            align-content: space-around;
+        }
+
+        .item{
             border: 1px solid black;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        #de{
-            border: 1px solid black;
-        }
-
-        #b {
-            background-color: lightblue;
-            text-align: center;
-            display: inline-block;
             width: 200px;
-            height: 200px;
-            border: 1px solid black;
+            margin: 10px;
         }
 
-        #b:hover{
-            background-color: lightgreen;
-            font-weight: bold;
+        .article3 {
+            flex-grow: 3;
         }
     </style>
 </head>
 <body>
-    <p><span>Lorem ipsum dolor sit amet consectetur</span>adipisicing elit. Odio quaerat
-         fugiat mollitia in. <span> natus deserunt molestiae illum fugiat corporis officia saepe, </span>minima 
-         sunt aliquam nobis reiciendis adipisci quisquam harum?</p>
-    <div class="a">1</div>
-    <div id="b">
-       <nav id="de">2</nav> 
-    </div>
-    <div id="b">3</div>
+    <h1 style="color: white;">FlexBox</h1>
+    <section class="container">
+        <article class="item article1">
+            Artigo1
+        </article>
+        <article class="item article2">
+            Artigo2
+        </article>
+        <article class="item article3">
+            Artigo3
+        </article>
+        <article class="item article1">
+            Artigo1
+        </article>
+        <article class="item article2">
+            Artigo2
+        </article>
+        <article class="item article3">
+            Artigo3
+        </article>
+        
+    </section>
 </body>
-</html> 
+</html>
