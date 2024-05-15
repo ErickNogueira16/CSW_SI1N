@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(241, 255, 47);
+            width: 400px;
+            padding: 80px;
+            margin: 0 auto;
+            flex-direction: row;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        button {
+            background-color: orange;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 0 10px 0 10px;
+        }
+
+        .botoes {
+            display: flex;
+            margin: 20px 0 0 0;
+            justify-content: center;
+        }
+
+        input, label {
+            display: flex;
+            margin: 5px 0 0 0;
+        }
+
+        input {
+            border-radius: 10px;
+        }
+
+        #contato {
+            display: flex;
+            margin: 3px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form action="" method="get">
+            <h1>Formulário de contato</h1>
+            <label for="nome">Nome: </label> 
+            <input type="text">
+            <label for="email">E-mail: </label>
+            <input type="email">
+            <label for="telefone">Telefone: </label>
+            <input type="tel">
+            <label for="coment">Comentário</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="DataVisita">Data de visita? </label>
+            <input type="date">
+            <div id="contato">
+                <label for="contact">Deseja receber contato? </label>
+                <label for="contact">Sim</label>
+                <input type="radio" name="contact" value="Sim" />
+                <label for="contact">Não</label>
+                <input type="radio" name="contact" value="Nao" />
+            </div>
+            <label for="contact">Assunto a receber</label>
+            <input type="text">
+            <label for="contact">O que mais gostou?</label>
+            <input type="text">
+            <div class="botoes"> <br>
+                <button>
+                    Enviar
+                </button>
+                <button>
+                    Limpar
+                </button>
+                <button>
+                    Voltar
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
