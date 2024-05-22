@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.writeln("Olá")
+    </script>
+    <h1>Olá</h1>
+    <p>Teste</p>
+    <script>
+        document.writeln("Olá 2")
+        /*window.alert("Alerta")*/
+    </script>
+    <hr>
+    <div id="resposta">
+
+    </div>
+    <script>
+        /*var entrada = window.prompt("Window prompt")*/
+        document.getElementById("resposta").innerHTML = entrada
+    </script>  
+    <hr>
+    <div class="seila">
+        <input id="login" type="text" size="30px">
+        <button onclick="validalogin()">Valida</button>
+        <input id="idade" type="text" size="30px">
+        <button onclick="validaIdade()">Valida</button>
+    </div>
+    <script>
+        function validalogin(){
+            var login = ''
+            login = document.getElementById("login").value
+            if(login == 'admin'){
+                window.alert("Acesso: " + login)
+            } else {
+                window.alert("Sai dai")
+            }
+        }
+
+        function validaIdade{
+            var idade = ''
+            idade = document.getElementById("idade").value
+            if(idade >= 60){
+                window.alert("Idoso")
+            }
+            else if(idade < 60 and > 18){
+                window.alert("Jovem")
+            }
+            else {
+                window.alert("Criança")
+            }
+
+        }
+    </script>
+</body>
+</html>
