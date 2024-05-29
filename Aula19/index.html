@@ -5,55 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-        document.writeln("Olá")
-    </script>
-    <h1>Olá</h1>
-    <p>Teste</p>
-    <script>
-        document.writeln("Olá 2")
-        /*window.alert("Alerta")*/
-    </script>
-    <hr>
-    <div id="resposta">
+    <header>
+        <img src="./img/logo.png" alt="Logo">
+        <div class="links">
+            <a href="">Sobre</a>
+            <a href="">Pontos turísticos</a>
+            <a href="">Galeria</a>
+            <a href="">Contato</a>
+        </div>
+    </header>
+    <section>
+        <div class="box">
+            <h1>Login</h1>
+            <label for="">E-mail: </label>
+            <input type="email" id="login">
+            <br>
+            <label for="">Senha: </label>
+            <input type="password" id="senha">
+            <br>
+            <div class="btn">
+                <button onclick="FuncLog()">Acessar</button>
+                <button onclick="fecha()">Fechar</button>
+            </div>
 
-    </div>
+        </div>
+    </section>
     <script>
-        /*var entrada = window.prompt("Window prompt")*/
-        document.getElementById("resposta").innerHTML = entrada
-    </script>  
-    <hr>
-    <div class="seila">
-        <input id="login" type="text" size="30px">
-        <button onclick="validalogin()">Valida</button>
-        <input id="idade" type="text" size="30px">
-        <button onclick="validaIdade()">Valida</button>
-    </div>
-    <script>
-        function validalogin(){
+        function FuncLog(){
             var login = ''
             login = document.getElementById("login").value
-            if(login == 'admin'){
-                window.alert("Acesso: " + login)
+            login = login.toLowerCase();
+            var senha = ''
+            senha = document.getElementById("senha").value
+            senha = senha.toLowerCase();
+
+
+
+            if(login == "adm@uvv.br" && senha == "adm#123"){
+                window.location.href = "/pag2.html";
             } else {
-                window.alert("Sai dai")
+                window.alert("Usuário ou senha inválidos")
             }
         }
 
-        function validaIdade{
-            var idade = ''
-            idade = document.getElementById("idade").value
-            if(idade >= 60){
-                window.alert("Idoso")
-            }
-            else if(idade < 60 and > 18){
-                window.alert("Jovem")
-            }
-            else {
-                window.alert("Criança")
-            }
+        function fecha(){
 
         }
     </script>
