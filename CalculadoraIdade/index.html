@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" name="" id="data">
+    <button onclick="CalcIdade()">Enviar</button>
+    <script>
+        date = new Date()
+        month = date.getFullMonth();
+        year = date.getFullYear();
+        ano = year - cut
+        function CalcIdade(){
+            var AnoAtual = 2024
+            data = document.getElementById("data").value
+            var cut = data.substring(0, 4)
+            var cut2 = data.substring(5, 7)
+            result = AnoAtual - ano
+            //seila = (result == 15) ? "Boa" : "Errou"
+            window.alert("Sua idade: " + result)
+
+        }
+    </script>
+</body>
+</html>
